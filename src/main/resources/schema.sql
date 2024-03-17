@@ -1,0 +1,11 @@
+CREATE TABLE question (
+  id INT PRIMARY KEY
+, category VARCHAR(20) NOT NULL
+, difficulty INT NOT NULL
+, option1 VARCHAR(200) NOT NULL
+, option2 VARCHAR(200) NOT NULL
+, option3 VARCHAR(200) NOT NULL
+, option4 VARCHAR(200) NOT NULL
+, question_title VARCHAR(500) NOT NULL
+, right_answer VARCHAR(200) NOT NULL
+);
