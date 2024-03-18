@@ -8,27 +8,12 @@ import lombok.Data;
 @Table(name="question")
 public class Question {
 
-    public enum DifficultyLevel {
-        EASY(1),
-        MEDIUM(2),
-        HARD(3);
-
-        public final int difficultyLevel;
-
-        private DifficultyLevel(int d) {
-            this.difficultyLevel = d;
-        }
-    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
 
     private String category;
-
-    @Enumerated(EnumType.ORDINAL)
-    private DifficultyLevel difficultyLevel;
-
+    private Character difficulty;
     private String option1;
     private String option2;
     private String option3;

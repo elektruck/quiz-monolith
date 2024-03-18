@@ -1,7 +1,7 @@
 CREATE TABLE question (
   id INT PRIMARY KEY
-, category VARCHAR(20) NOT NULL
-, difficulty INT NOT NULL
+, category CHAR(1) NOT NULL
+, difficulty SMALLINT NOT NULL
 , option1 VARCHAR(200) NOT NULL
 , option2 VARCHAR(200) NOT NULL
 , option3 VARCHAR(200) NOT NULL
