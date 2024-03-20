@@ -19,6 +19,6 @@ public class Question {
     private String option3;
     private String option4;
     private String questionTitle;
-    private String rightAnswer;
+    private String rightAnswer; // Using String instead of an integer between 1 and 4 easily allows option order to be randomized
 
 }
