@@ -49,7 +49,7 @@ public class QuestionController {
     public ResponseEntity<String> addQuestion(@RequestBody Question question) {
         try {
             questionService.addQuestion(question);
-            return new ResponseEntity<String>("success", HttpStatus.CREATED);
+            return new ResponseEntity<String>("Question inserted", HttpStatus.CREATED);
         } catch (Exception e) {
             logException(e);
         }
@@ -61,9 +61,9 @@ public class QuestionController {
         try {
             boolean deleted = questionService.deleteQuestion(id);
             if(deleted) {
-                return new ResponseEntity<String>("Question " + id + " deleted", HttpStatus.OK);
+                return new ResponseEntity<String>("Question %s deleted".formatted(id), HttpStatus.OK);
             }
-            return new ResponseEntity<String>("Question " + id + " not found", HttpStatus.NOT_FOUND);
+            return new ResponseEntity<String>("Question %s not found".formatted(id), HttpStatus.NOT_FOUND);
         } catch(Exception e) {
             logException(e);
         }

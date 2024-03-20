@@ -1,0 +1,24 @@
+meta {
+  name: Add question
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/question/add
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "category": "Kotlin",
+      "difficulty": "H",
+      "option1": "option a)",
+      "option2": "option b)",
+      "option3": "option c)",
+      "option4": "option d)",
+      "questionTitle": "Question - POST 01",
+      "rightAnswer": "option c)"
+  }
+}

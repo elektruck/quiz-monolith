@@ -1,0 +1,17 @@
+meta {
+  name: Create quiz
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/quiz/create?category=Java&numQuestions=3&title=JavaQuiz
+  body: none
+  auth: none
+}
+
+query {
+  category: Java
+  numQuestions: 3
+  title: JavaQuiz
+}

@@ -1,0 +1,28 @@
+meta {
+  name: Submit quiz answers
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:8080/quiz/submit/152
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "id": 1,
+      "answer": "option a)"
+    },
+    {
+      "id": 16,
+      "answer": "option a)"
+    },
+    {
+      "id": 25,
+      "answer": "option d)" // option b)
+    }
+  ]
+}
