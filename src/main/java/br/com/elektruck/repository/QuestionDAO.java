@@ -1,6 +1,6 @@
-package com.practicing.Quiz.repository;
+package br.com.elektruck.Quiz.repository;
 
-import com.practicing.Quiz.model.Question;
+import br.com.elektruck.Quiz.model.Question;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

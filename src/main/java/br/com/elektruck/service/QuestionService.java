@@ -1,7 +1,7 @@
-package com.practicing.Quiz.service;
+package br.com.elektruck.Quiz.service;
 
-import com.practicing.Quiz.model.Question;
-import com.practicing.Quiz.repository.QuestionDAO;
+import br.com.elektruck.Quiz.repository.QuestionDAO;
+import br.com.elektruck.Quiz.model.Question;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

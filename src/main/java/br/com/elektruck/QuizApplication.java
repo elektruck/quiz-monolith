@@ -1,4 +1,4 @@
-package com.practicing.Quiz;
+package br.com.elektruck.Quiz;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

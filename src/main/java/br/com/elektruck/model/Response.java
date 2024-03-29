@@ -1,4 +1,4 @@
-package com.practicing.Quiz.model;
+package br.com.elektruck.Quiz.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,9 +1,8 @@
-package com.practicing.Quiz.controller;
+package br.com.elektruck.Quiz.controller;
 
-import com.practicing.Quiz.model.Question;
-import com.practicing.Quiz.model.QuestionWrapper;
-import com.practicing.Quiz.model.Response;
-import com.practicing.Quiz.service.QuizService;
+import br.com.elektruck.Quiz.model.Response;
+import br.com.elektruck.Quiz.service.QuizService;
+import br.com.elektruck.Quiz.model.QuestionWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

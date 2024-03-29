@@ -1,11 +1,11 @@
-package com.practicing.Quiz.service;
+package br.com.elektruck.Quiz.service;
 
-import com.practicing.Quiz.model.Question;
-import com.practicing.Quiz.model.QuestionWrapper;
-import com.practicing.Quiz.model.Quiz;
-import com.practicing.Quiz.model.Response;
-import com.practicing.Quiz.repository.QuestionDAO;
-import com.practicing.Quiz.repository.QuizDAO;
+import br.com.elektruck.Quiz.model.Question;
+import br.com.elektruck.Quiz.repository.QuestionDAO;
+import br.com.elektruck.Quiz.repository.QuizDAO;
+import br.com.elektruck.Quiz.model.QuestionWrapper;
+import br.com.elektruck.Quiz.model.Quiz;
+import br.com.elektruck.Quiz.model.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
