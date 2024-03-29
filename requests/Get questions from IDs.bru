@@ -1,0 +1,21 @@
+meta {
+  name: Get questions from IDs
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:8080/question/getQuestions
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}
