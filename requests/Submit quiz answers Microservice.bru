@@ -1,0 +1,28 @@
+meta {
+  name: Submit quiz answers Microservice
+  type: http
+  seq: 11
+}
+
+post {
+  url: http://localhost:8090/quiz/submit/1
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "id": 1,
+      "answer": "option a)"
+    },
+    {
+      "id": 16,
+      "answer": "option a)"
+    },
+    {
+      "id": 25,
+      "answer": "option a)" // option b)
+    }
+  ]
+}

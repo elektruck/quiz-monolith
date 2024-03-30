@@ -1,0 +1,19 @@
+meta {
+  name: Create quiz Microservice
+  type: http
+  seq: 9
+}
+
+post {
+  url: http://localhost:8090/quiz/create
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "categoryName": "Rust",
+    "numQuestions": 10,
+    "title": "Rust quiz 101"
+  }
+}

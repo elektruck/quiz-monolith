@@ -1,0 +1,32 @@
+meta {
+  name: Get score
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://localhost:8080/question/getScore
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "id": 1,
+      "answer": "option a)"
+    },
+    {
+      "id": 3,
+      "answer": "option d)"
+    },
+    {
+      "id": 5,
+      "answer": "option c)"
+    },
+    {
+      "id": 7,
+      "answer": "option d)"
+    }
+  ]
+}
